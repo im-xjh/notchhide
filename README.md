@@ -1,5 +1,7 @@
 # notchhide
 
+[中文说明](README.zh-CN.md)
+
 `notchhide` is a Codex skill and small Python utility for creating TopNotch-like macOS wallpaper variants. It adds a black cover to the top of a wallpaper so the MacBook notch and menu-bar area blend into the background.
 
 The script accounts for wallpaper scaling and crop behavior, so it works with nonstandard image sizes instead of drawing a fixed black strip.
