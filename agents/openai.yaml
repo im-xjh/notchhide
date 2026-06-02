@@ -1,0 +1,4 @@
+interface:
+  display_name: "Notchhide"
+  short_description: "Hide macOS notch by processing wallpapers"
+  default_prompt: "Use $notchhide to create a macOS wallpaper variant that hides the notch/menu bar area."
