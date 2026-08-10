@@ -126,11 +126,21 @@ This keeps the visible black area close to the actual menu-bar/notch height afte
 
 ## Repository Layout
 
+The repository holds two implementations of the same cover logic:
+
+- `scripts/notchhide.py` — the standalone script invoked by the skill.
+- `python/` — the packaged Python implementation (`notch-cover`), with CLI, geometry, and macOS display detection split into modules plus tests.
+
 ```text
 notchhide/
 ├── SKILL.md
 ├── agents/
 │   └── openai.yaml
-└── scripts/
-    └── notchhide.py
+├── scripts/
+│   └── notchhide.py
+└── python/
+    ├── pyproject.toml
+    ├── README.md
+    ├── src/notch_cover/
+    └── tests/
 ```

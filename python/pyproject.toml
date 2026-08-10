@@ -1,0 +1,27 @@
+[project]
+name = "notch-cover"
+version = "0.1.0"
+description = "Create macOS wallpaper variants with a precise black notch/menu-bar cover."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pillow>=10.0.0",
+]
+
+[project.scripts]
+notch-cover = "notch_cover.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/notch_cover"]

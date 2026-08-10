@@ -126,6 +126,11 @@ input                    输入壁纸图片
 
 ## 仓库结构
 
+仓库里有两套实现，功能相同：
+
+- `scripts/notchhide.py` — skill 调用的独立脚本。
+- `python/` — Python 包实现（notch-cover），把 CLI、几何计算和 macOS 显示器检测拆成独立模块，并带测试。
+
 ```text
 notchhide/
 ├── SKILL.md
@@ -133,6 +138,11 @@ notchhide/
 ├── README.zh-CN.md
 ├── agents/
 │   └── openai.yaml
-└── scripts/
-    └── notchhide.py
+├── scripts/
+│   └── notchhide.py
+└── python/
+    ├── pyproject.toml
+    ├── README.md
+    ├── src/notch_cover/
+    └── tests/
 ```
